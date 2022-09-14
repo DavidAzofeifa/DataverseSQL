@@ -9,7 +9,7 @@ WITH
             OPENROWSET
             (
                 BULK '/model.json',
-				DATA_SOURCE = 'DataSource',
+                DATA_SOURCE = 'DataSource',
                 FORMAT = 'CSV',
                 FIELDQUOTE = '0x0b',
                 FIELDTERMINATOR ='0x0b',
