@@ -8,7 +8,7 @@ This file contains two T-SQL variables that need to be customized:
 - **@storageaccount** (just the [storage account name](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-name), without the *.dfs.core.windows.net*)
 
 ## 1. vDynamicsModel.sql
-This view parses the **model.json** file at the root of the container, and generates a T-SQL view that returns all the tables and columns with their respective datatypes. This information is going to be used by the next step.
+This view parses the **[model.json](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-data-lake#view-your-data-in-azure-data-lake-storage-gen2)** file at the root of the container, and generates a T-SQL view that returns all the tables and columns with their respective datatypes. This information is going to be used by the next step.
 
 ## 2. sp_Rebuild_vDynamicsData.sql
 This stored procedure takes the data from **vDynamicsModel** and generates multiple views called **vDynamics_*TABLENAME*** in Synapse Serverless. The view name prefix can be customized.
