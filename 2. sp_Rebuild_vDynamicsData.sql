@@ -3,7 +3,7 @@ CREATE OR ALTER   PROCEDURE [dbo].[sp_Rebuild_vDynamicsData] AS
 BEGIN
 
     DECLARE @viewprefix NVARCHAR(MAX) = 'vDynamicsData'; -- You can change the prefix of the views here
-	DECLARE @sql NVARCHAR(MAX) = '';
+    DECLARE @sql NVARCHAR(MAX) = '';
 	
     WITH
 
