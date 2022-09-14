@@ -8,7 +8,7 @@ You can use these scripts as examples on how to use [Synapse Serverless](https:/
 This file contains two T-SQL variables that need to be customized:
 
 - **@container** ([the name of the container](https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata#container-names) that stores the Dataverse data, including the **[model.json](https://docs.microsoft.com/en-us/common-data-model/model-json)** metadata descriptor).
-- **@storageaccount** (just the [storage account name](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-name), without the *.dfs.core.windows.net*)
+- **@storageaccount** (just the [storage account name](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-name), without the *.dfs.core.windows.net*).
 
 This step assumes that Synapse's [Managed Identity is already authorized to read data](https://docs.microsoft.com/en-us/azure/storage/blobs/authorize-managed-identity) from the Data Lake storage account.
 
