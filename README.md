@@ -1,8 +1,6 @@
 # DataverseSQL
 
-You can use these scripts as examples on how to use [Syanpse Serverless](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) [T-SQL](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features) to query [Dataverse](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro) data stored by [Synapse Link for Dataverse](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake) into an [Azure Data Lake](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
-
-*Please read the [LICENSE](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/LICENSE) file that applies to this repo.*
+You can use these scripts as examples on how to use [Syanpse Serverless](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) [T-SQL](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features) to query [Dataverse](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro) data stored by [Synapse Link for Dataverse](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake) into an [Azure Data Lake](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction). ***Please read the [LICENSE](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/LICENSE) file that applies to this repo.***
 
 ## 0. [Initialize Security.sql](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/0.%20Initialize%20Security.sql)
 This file contains two T-SQL variables that need to be customized:
