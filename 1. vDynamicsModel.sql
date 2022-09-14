@@ -17,7 +17,6 @@ WITH
             )
             WITH (modelJSON NVARCHAR(MAX)) m
     )
-
 SELECT
     entityID = DENSE_RANK() OVER (ORDER BY CONVERT(BIGINT, e.[key])),
     entityName = JSON_VALUE(e.[value], '$.name'),
