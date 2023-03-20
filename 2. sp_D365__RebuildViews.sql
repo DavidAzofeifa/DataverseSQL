@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE [dbo].[sp_D365_RebuildViews] AS
+CREATE OR ALTER PROCEDURE [dbo].[sp_D365__RebuildViews] AS
 
 BEGIN
 
