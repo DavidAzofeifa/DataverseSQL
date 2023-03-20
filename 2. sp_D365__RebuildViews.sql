@@ -55,7 +55,7 @@ BEGIN
                     WITHIN GROUP (ORDER BY columnID)
             
                 FROM
-                    vD365__Model
+                    v_D365__model
                 GROUP BY
                     entityName
         )
