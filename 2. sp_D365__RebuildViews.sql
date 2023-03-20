@@ -2,7 +2,7 @@ CREATE OR ALTER PROCEDURE [dbo].[sp_D365__RebuildViews] AS
 
 BEGIN
 
-    DECLARE @viewprefix NVARCHAR(MAX) = 'vD365'; -- You can change the prefix of the views here
+    DECLARE @viewprefix NVARCHAR(MAX) = 'v_D365_'; -- You can change the prefix of the views here
     DECLARE @sql NVARCHAR(MAX) = '';
 	
     WITH
@@ -69,7 +69,7 @@ BEGIN
                         '
                         EXEC(''
 
-                        CREATE OR ALTER VIEW [', @viewprefix, '_', UPPER(cd.entityName), '] AS
+                        CREATE OR ALTER VIEW [', @viewprefix, UPPER(cd.entityName), '] AS
 
                         SELECT
                             ', cd.columns4select, '
