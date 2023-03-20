@@ -12,7 +12,7 @@ This file contains two T-SQL variables that need to be customized:
 
 This step assumes that Synapse's [Managed Identity is already authorized to read data](https://docs.microsoft.com/en-us/azure/storage/blobs/authorize-managed-identity) from the Data Lake storage account.
 
-### 1. [v365__model.sql](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/1.%20vD365__model.sql)
+### 1. [v_D365__model.sql](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/1.%20v_D365__model.sql)
 This view parses the **[model.json](https://docs.microsoft.com/en-us/common-data-model/model-json)** file at the root of the container, and returns all the tables and columns with their respective datatypes. This information is going to be used by the next step.
 
 ### 2. [sp_D365__RebuildViews.sql](https://github.com/DavidAzofeifa/DataverseSQL/blob/main/2.%20sp_D365__RebuildViews.sql)
