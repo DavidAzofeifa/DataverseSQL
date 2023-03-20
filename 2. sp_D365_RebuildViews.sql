@@ -1,8 +1,8 @@
-CREATE OR ALTER   PROCEDURE [dbo].[sp_Rebuild_vDynamicsData] AS
+CREATE OR ALTER PROCEDURE [dbo].[sp_D365_RebuildViews] AS
 
 BEGIN
 
-    DECLARE @viewprefix NVARCHAR(MAX) = 'vDynamicsData'; -- You can change the prefix of the views here
+    DECLARE @viewprefix NVARCHAR(MAX) = 'vD365'; -- You can change the prefix of the views here
     DECLARE @sql NVARCHAR(MAX) = '';
 	
     WITH
@@ -55,7 +55,7 @@ BEGIN
                     WITHIN GROUP (ORDER BY columnID)
             
                 FROM
-                    vDynamicsModel
+                    vD365__Model
                 GROUP BY
                     entityName
         )
