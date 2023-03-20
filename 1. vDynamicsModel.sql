@@ -1,4 +1,4 @@
-CREATE OR ALTER VIEW [dbo].[vDynamicsModel] AS
+CREATE OR ALTER VIEW [dbo].[vD365__Model] AS
 
 WITH
     [model] AS
